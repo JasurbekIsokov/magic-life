@@ -1,3 +1,13 @@
 $grid-width: 114rem;
 $space-vertical: 8rem;
 $space-horizontal: 6rem;
+$float-1-2: calc((100% - #{$space-horizontal}) / 2);
+$float-1-3: calc(((100% - 2 *#{$space-horizontal}) / 3));
+$float-2-3: calc(
+  2 * ((100% - 2 *#{$space-horizontal}) / 3) + #{$space-horizontal}
+);
+$float-1-4: calc((100% - 3 * #{$space-horizontal}) / 4);
+$float-2-4: ((100% - 3 * #{$space-horizontal}) / 4) * 2 + #{$space-horizontal};
+$float-3-4: calc(
+  ((100% - 3 * #{$space-horizontal}) / 4) * 3 + 2 * #{$space-horizontal}
+);

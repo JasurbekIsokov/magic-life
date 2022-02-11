@@ -1,0 +1,26 @@
+.contact {
+  max-width: $grid-width;
+  margin: 0 auto;
+  background-color: #eee;
+
+  &:not(:last-child) {
+    margin: $space-vertical;
+  }
+
+  @include clearfix;
+
+  [class^="col-"] {
+    background-color: orangered;
+    float: left;
+    height: 5rem;
+
+    &:not(:last-child) {
+      margin-right: $space-horizontal;
+    }
+  }
+}
+
+.contact__left,
+.contact__right {
+  @include float-1-2;
+}

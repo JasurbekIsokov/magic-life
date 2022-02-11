@@ -38,16 +38,6 @@
     transform: translate(0);
     opacity: 1; } }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  position: relative;
-  font-size: 1.6rem; }
-
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -55,6 +45,15 @@
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  position: relative;
+  font-size: 1.6rem; }
 
 .btn--white {
   background-color: #fff;
@@ -85,6 +84,10 @@
   animation-timing-function: ease-in-out;
   animation-delay: 0.75s;
   animation-fill-mode: backwards; }
+
+.contact__right--myform-button {
+  background-color: purple;
+  color: #fff; }
 
 /* 
 COLORS:
@@ -166,31 +169,42 @@ body {
   transform: translate(-50%, -50%);
   text-align: center; }
 
-.grid-test__row {
+.grid-test__row,
+.contact {
   max-width: 114rem;
   margin: 0 auto;
   background-color: #eee; }
-  .grid-test__row:not(:last-child) {
+  .grid-test__row:not(:last-child),
+  .contact:not(:last-child) {
     margin: 8rem; }
-  .grid-test__row::after {
+  .grid-test__row::after,
+  .contact::after {
     content: "";
     display: table;
     clear: both; }
-  .grid-test__row [class^="col-"] {
+  .grid-test__row [class^="col-"],
+  .contact [class^="col-"] {
     background-color: orangered;
     float: left;
     height: 5rem; }
-    .grid-test__row [class^="col-"]:not(:last-child) {
+    .grid-test__row [class^="col-"]:not(:last-child),
+    .contact [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
-  .grid-test__row .col-1-of-2 {
+  .grid-test__row .col-1-of-2,
+  .contact .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
-  .grid-test__row .col-1-of-3 {
-    width: calc((100% - 2 *6rem) / 3); }
-  .grid-test__row .col-2-of-3 {
+  .grid-test__row .col-1-of-3,
+  .contact .col-1-of-3 {
+    width: calc(((100% - 2 *6rem) / 3)); }
+  .grid-test__row .col-2-of-3,
+  .contact .col-2-of-3 {
     width: calc( 2 * ((100% - 2 *6rem) / 3) + 6rem); }
-  .grid-test__row .col-1-of-4 {
+  .grid-test__row .col-1-of-4,
+  .contact .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
-  .grid-test__row .col-2-of-4 {
+  .grid-test__row .col-2-of-4,
+  .contact .col-2-of-4 {
     width: calc( ((100% - 3 * 6rem) / 4) * 2 + 6rem); }
-  .grid-test__row .col-3-of-4 {
+  .grid-test__row .col-3-of-4,
+  .contact .col-3-of-4 {
     width: calc( ((100% - 3 * 6rem) / 4) * 3 + 2 * 6rem); }
