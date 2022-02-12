@@ -27,9 +27,9 @@
     width: calc(((100% - 2 *#{$space-horizontal}) / 2));
   }
 
-  // .col-1-of-3 {
-  //   width: calc(((100% - 2 *#{$space-horizontal}) / 3));
-  // }
+  .col-1-of-3 {
+    width: calc(((100% - 2 *#{$space-horizontal}) / 3));
+  }
 
   // .col-1-of-3 {
   //   @include float-1-3;

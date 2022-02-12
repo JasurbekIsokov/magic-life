@@ -131,6 +131,10 @@
   .btn-text:active {
     transform: translateY(0); }
 
+.bnt__all {
+  position: relative;
+  margin: -2rem 10rem 2rem 10rem; }
+
 .compositions {
   position: relative; }
   .compositions__photo {
@@ -157,23 +161,28 @@
   .compositions:hover .compositions__photo:not(:hover) {
     transform: scale(0.9); }
 
-.cards__card {
+.features__feature {
   height: 30rem !important;
   padding: 3rem 1rem 2rem 1rem;
   margin-top: 17rem;
   background-color: #eee;
   text-align: center; }
-  .cards__card h4 {
+  .features__feature:hover {
+    transform: translateY(-2rem);
+    transform: scale(1.05);
+    transition: all 0.3s;
+    cursor: pointer; }
+  .features__feature h4 {
     margin: 1rem;
     text-transform: uppercase; }
-  .cards__card [class^="icon-"] {
+  .features__feature [class^="icon-"] {
     font-size: 6rem;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
 
-.cards > * {
+.features > * {
   transform: skewY(7deg); }
 
 /* 
@@ -272,6 +281,8 @@ body {
       margin-right: 6rem; }
   .grid-test__row .col-1-of-2 {
     width: calc(((100% - 2 *6rem) / 2)); }
+  .grid-test__row .col-1-of-3 {
+    width: calc(((100% - 2 *6rem) / 3)); }
   .grid-test__row .col-1-of-4 {
     width: calc((100% - 3 * 6rem) / 4); }
 
@@ -281,7 +292,7 @@ body {
   height: 185vh;
   margin-top: -25vh; }
 
-.cards {
+.features {
   margin-top: -25rem;
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(85, 197, 122, 0.8)), url("../img/nat-4.jpg");
@@ -289,3 +300,87 @@ body {
   background-size: cover;
   transform: skewY(-7deg);
   position: relative; }
+
+.u-mrgin-top--big-2 {
+  margin-top: 8rem; }
+
+.cards {
+  perspective: 200rem;
+  -moz-perspective: 200rem;
+  position: relative; }
+  .cards__card {
+    background-color: #fff;
+    width: 330px;
+    height: 500px;
+    transition: all 1s ease;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
+    .cards__card--back {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      transform: rotateY(180deg);
+      padding: 6rem; }
+      .cards__card--back a {
+        margin-left: 3rem; }
+      .cards__card--back__2 {
+        background-image: linear-gradient(to right bottom, #55c57a, #28b485); }
+      .cards__card--back__3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      .cards__card--back p {
+        text-align: center;
+        font-size: 2.4rem;
+        color: #fff; }
+      .cards__card--back .sena {
+        font-size: 5rem;
+        margin: 10rem 0; }
+    .cards__card .explorer {
+      text-align: right;
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8));
+      color: #f7f7f7;
+      display: inline-block;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      position: absolute; }
+    .cards__card .explorer__2 {
+      text-align: right;
+      background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)); }
+    .cards__card .explorer__3 {
+      text-align: right;
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)); }
+    .cards__card .explorer-1 {
+      margin-top: -11rem;
+      margin-left: 19rem; }
+    .cards__card .explorer-2 {
+      margin-top: -9rem;
+      margin-left: 16.2rem; }
+    .cards__card .cards__card--list {
+      color: #111;
+      text-align: center;
+      margin-top: -3rem; }
+      .cards__card .cards__card--list li {
+        list-style: none;
+        padding: 1rem 0; }
+      .cards__card .cards__card--list hr {
+        width: 80%;
+        margin: 0 auto;
+        opacity: 0.2; }
+    .cards__card--photo {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../img/nat-5.jpg");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 45%;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 95%);
+      background-blend-mode: screen; }
+    .cards__card--photo-2 {
+      background-image: linear-gradient(to right bottom, #55c57a, #28b485), url("../img/nat-6.jpg"); }
+    .cards__card--photo-3 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
+  .cards:hover .cards__card--front {
+    transform: rotateY(-180deg); }
+  .cards:hover .cards__card--back {
+    transform: rotateY(0); }

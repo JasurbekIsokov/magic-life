@@ -36,36 +36,3 @@
 }
 
 // /About section
-
-// Card section
-
-.cards__card {
-  height: 30rem !important;
-  padding: 3rem 1rem 2rem 1rem;
-  margin-top: 17rem;
-  background-color: #eee;
-  text-align: center;
-
-  h4 {
-    margin: 1rem;
-    text-transform: uppercase;
-  }
-
-  [class^="icon-"] {
-    font-size: 6rem;
-    background-image: linear-gradient(
-      to right,
-      $color-primary,
-      $color-primary-dark
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-  }
-}
-
-.cards > * {
-  transform: skewY(7deg);
-}
-
-// /Card section
