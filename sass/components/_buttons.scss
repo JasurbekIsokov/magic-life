@@ -87,8 +87,22 @@
 
 // Card section
 
-.bnt__all {
-  margin: -2rem 10rem 2rem 10rem;
+.btn__card {
+  display: inline-block;
+  position: relative;
+  margin-top: 42rem;
+  margin-left: 52rem;
+  color: $color-white;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-dark,
+    $color-primary-light
+  );
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
 }
 
 // /Card section

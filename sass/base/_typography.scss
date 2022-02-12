@@ -38,3 +38,67 @@
 }
 
 // About section
+
+// Card sectin
+
+.explorer {
+  text-align: right;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-secondary-light-1, 0.8),
+    rgba($color-secondary-light-2, 0.8)
+  );
+  color: #f7f7f7;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  position: absolute;
+}
+
+.explorer__2 {
+  text-align: right;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+}
+
+.explorer__3 {
+  text-align: right;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-tertiary-light-1, 0.8),
+    rgba($color-tertiary-light-2, 0.8)
+  );
+}
+
+.explorer-1 {
+  margin-top: -11rem;
+  margin-left: 19rem;
+}
+
+.explorer-2 {
+  margin-top: -9rem;
+  margin-left: 16.2rem;
+}
+
+.cards__card--list {
+  color: #111;
+  text-align: center;
+  margin-top: -3rem;
+
+  li {
+    list-style: none;
+    padding: 1rem 0;
+  }
+
+  hr {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.2;
+  }
+}
+
+// /Card section

@@ -9,10 +9,10 @@
 
 @import "components/buttons";
 @import "components/carousel";
-@import "components/cover";
 @import "components/dropdown";
 @import "components/compositions";
 @import "components/feature-box";
+@import "components/card-box";
 
 @import "layout/footer";
 @import "layout/forms";
@@ -21,8 +21,6 @@
 @import "layout/sidebar";
 @import "layout/navigation";
 
-@import "pages/about";
-@import "pages/contact";
 @import "pages/home";
 
 @import "themes/admin";
