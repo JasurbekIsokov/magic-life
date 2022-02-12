@@ -1,3 +1,5 @@
+// Header section button
+
 .btn {
   &:hover {
     transform: translateY(-3px);
@@ -55,7 +57,30 @@
   animation-fill-mode: backwards;
 }
 
-.contact__right--myform-button {
-  background-color: purple;
-  color: #fff;
+.btn-text {
+  margin-top: 2rem;
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+  }
+  &:hover {
+    color: #fff;
+    padding: 3px;
+    background-color: $color-primary;
+    transform: translateY(-0.5rem);
+    transition: all 0.2s;
+  }
+  &:active {
+    transform: translateY(0);
+  }
 }
+
+// /Header section button
+
+// About section
+
+// /About section
