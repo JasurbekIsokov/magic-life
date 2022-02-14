@@ -45,3 +45,43 @@
 }
 
 // /Card section
+
+// Stories section
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+}
+
+// /Stories section
+
+// Book section
+
+.section-book {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+  padding: 8.5rem;
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba(#fff, 0.8) 0%,
+      rgba(#fff, 0.8) 50%,
+      transparent 50%
+    ),
+    url("img/nat-9.jpg");
+
+  height: 50rem;
+  background-size: cover;
+
+  &__form {
+    padding: 6rem;
+    width: 50%;
+  }
+}
+
+// /Book section

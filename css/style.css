@@ -274,6 +274,112 @@
   .cards__card--photo-3 {
     background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("../img/nat-7.jpg"); }
 
+.story {
+  max-width: 75%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  padding: 6rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story > * {
+    transform: skewX(12deg); }
+  .story__img {
+    clip-path: circle(50% at 50% 50%);
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    position: relative;
+    transform: translate(-2rem) skewX(12deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; }
+    .story__img--box {
+      height: 100%;
+      transform: scale(1.4), translateX(-2rem); }
+    .story__img--caption {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+      opacity: 0;
+      display: inline-block;
+      transition: all 1s; }
+  .story:hover .story__img--caption {
+    top: 50%;
+    opacity: 1; }
+  .story:hover .story__img--box {
+    transform: scale(1), translateX(-3rem);
+    filter: blur(3px) brightness(80%);
+    transition: all 1s ease; }
+
+.row-2 {
+  margin-top: 8rem; }
+
+.story__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  opacity: 0.15;
+  overflow: hidden; }
+  .story__video--content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.footer {
+  background-color: #333;
+  width: 100%;
+  height: 50rem;
+  padding: 2rem; }
+  .footer__logo {
+    width: 18rem;
+    margin: 9rem 50rem 7rem 50rem; }
+  .footer__left {
+    width: 90%; }
+    .footer__left ul li {
+      display: inline-block; }
+      .footer__left ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 13.2px;
+        margin-right: 1.42rem;
+        margin-top: 2rem; }
+        .footer__left ul li a:hover {
+          color: #28b485;
+          transform: scale(1.1); }
+  .footer__right p {
+    margin-top: 2rem; }
+
+.form__group:not(:last-child) {
+  margin-top: 2rem; }
+  .form__group:not(:last-child)__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    width: 70;
+    background-color: #fff;
+    border-radius: 2px;
+    border: none;
+    display: block;
+    border-bottom: 3px solid transparent; }
+  .form__group:not(:last-child):focus {
+    border-bottom: 3px solid green;
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.form:focus:invalid {
+  border-bottom: 3px solid crimson; }
+
 /* 
 COLORS:
 
@@ -398,3 +504,19 @@ body {
     transform: rotateY(-180deg); }
   .cards:hover .cards__card--back {
     transform: rotateY(0); }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
+
+.section-book {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+  padding: 8.5rem; }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("img/nat-9.jpg");
+  height: 50rem;
+  background-size: cover; }
+  .book__form {
+    padding: 6rem;
+    width: 50%; }

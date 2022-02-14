@@ -1,0 +1,33 @@
+.form {
+  &__group:not(:last-child) {
+    margin-top: 2rem;
+
+    &__input {
+      font-size: 1.5rem;
+      padding: 1.5rem 2rem;
+      width: 70;
+      background-color: #fff;
+      border-radius: 2px;
+      border: none;
+      display: block;
+      border-bottom: 3px solid transparent;
+    }
+
+    &:focus {
+      border-bottom: 3px solid green;
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, 0.4);
+    }
+  }
+
+  &:focus:invalid {
+    border-bottom: 3px solid crimson;
+  }
+
+  &__input:focus &__label {
+  }
+
+  // &__group:not(:last-child) {
+  //   margin-top: 2rem;
+  // }
+}
