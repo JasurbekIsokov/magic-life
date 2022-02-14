@@ -357,7 +357,8 @@
         margin-top: 2rem; }
         .footer__left ul li a:hover {
           color: #28b485;
-          transform: scale(1.1); }
+          transform: scale(1.1);
+          transition: 0.3s; }
   .footer__right p {
     margin-top: 2rem; }
 

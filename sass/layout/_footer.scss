@@ -25,6 +25,7 @@
           &:hover {
             color: $color-primary-dark;
             transform: scale(1.1);
+            transition: 0.3s;
           }
         }
       }
